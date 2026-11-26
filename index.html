@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1d1820">
+  <title>Chicharronería Irpavi | La Paz, Bolivia</title>
+  <meta name="description" content="Chicharronería Irpavi: platos bolivianos tradicionales de La Paz, los Valles y el Oriente.">
+  <link rel="icon" href="assets/logito.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/logito.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    /* Aplica el tema guardado antes de pintar la página */
+    try {
+      var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Sprite de íconos SVG (sin emojis) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-ig" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/>
+      </symbol>
+      <symbol id="i-tiktok" viewBox="0 0 24 24">
+        <path fill="currentColor" stroke="none" d="M16.5 3c.3 2.4 1.7 3.9 4 4.1v3.1c-1.4 0-2.7-.4-4-1.2v6.3a5.3 5.3 0 1 1-5.3-5.3c.3 0 .6 0 .9.1v3.2a2.1 2.1 0 1 0 1.1 1.9V3h3.3z"/>
+      </symbol>
+      <symbol id="i-fb" viewBox="0 0 24 24">
+        <path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/>
+      </symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24">
+        <path d="M3 21l1.3-4.2A9 9 0 1 1 7.5 19.7L3 21z"/>
+        <path d="M9 8.5c0 3.3 2.7 6 6 6l.8-1.4-2-.9-.9.9c-1-.4-2-1.4-2.4-2.4l.9-.9-.9-2z"/>
+      </symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24">
+        <rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor" stroke="none"/>
+        <rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor" stroke="none"/>
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24">
+        <path d="M7 5l12 7-12 7z" fill="currentColor" stroke="none"/>
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+      </symbol>
+      <symbol id="i-left" viewBox="0 0 24 24">
+        <polyline points="15 18 9 12 15 6"/>
+      </symbol>
+      <symbol id="i-right" viewBox="0 0 24 24">
+        <polyline points="9 18 15 12 9 6"/>
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="M6 6l12 12M18 6L6 18"/>
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path fill="currentColor" stroke="none" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/>
+      </symbol>
+      <symbol id="i-home" viewBox="0 0 24 24">
+        <path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
+      </symbol>
+      <symbol id="i-list" viewBox="0 0 24 24">
+        <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>
+      </symbol>
+      <symbol id="i-image" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="3"/>
+        <circle cx="9" cy="9" r="2"/>
+        <path d="M21 15l-5-5L5 21"/>
+      </symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24">
+        <path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.8a1 1 0 0 0 1-.8L20 8H6.2"/>
+        <circle cx="9.5" cy="19" r="1.4"/>
+        <circle cx="17" cy="19" r="1.4"/>
+      </symbol>
+      <symbol id="i-burger" viewBox="0 0 24 24">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <!-- ================= BIENVENIDA: tocar para entrar (activa la música) ================= -->
+  <section id="entrada" class="entrada" aria-label="Bienvenida">
+    <div class="entrada-inner">
+      <img class="entrada-logo" src="assets/logito.png" alt="Logo Chicharronería Irpavi" width="120" height="120">
+      <h1 class="entrada-title" data-i18n="hero_title">Chicharronería Irpavi</h1>
+      <p class="entrada-sub" data-i18n="hero_sub">Todo el sabor de Bolivia en cada plato</p>
+      <button id="enter-btn" class="btn btn-primary entrada-btn" type="button" data-i18n="enter">Toca para entrar</button>
+    </div>
+  </section>
+
+  <!-- ================= CABECERA ================= -->
+  <header class="site-header">
+    <div class="header-top">
+      <button id="menu-btn" class="tool-btn menu-btn" type="button" aria-controls="drawer" aria-expanded="false" data-i18n-label="drawer_title" aria-label="Menú">
+        <svg class="ic" aria-hidden="true"><use href="#i-burger"/></svg>
+      </button>
+
+      <a class="brand" href="#inicio" aria-label="Chicharronería Irpavi, ir al inicio">
+        <img src="assets/logito.png" alt="Logo Chicharronería Irpavi" width="104" height="104">
+      </a>
+
+      <button id="lang-toggle" class="lang-btn" type="button" data-i18n-label="lang_label" aria-label="Cambiar idioma">EN</button>
+    </div>
+
+    <!-- Navegación de escritorio (en celular se usa la barra inferior y el menú) -->
+    <div class="header-bar">
+      <nav id="site-nav" class="site-nav" aria-label="Principal">
+        <a class="nav-link" href="#inicio" data-i18n="nav_home">Inicio</a>
+        <a class="nav-link" href="#nosotros" data-i18n="nav_about">Nosotros</a>
+        <a class="nav-link" href="#carta" data-i18n="nav_menu">Carta</a>
+        <a class="nav-link" href="#pedidos" data-i18n="nav_orders">Pedidos</a>
+        <a class="nav-link" href="#galeria" data-i18n="nav_gallery">Galería</a>
+        <a class="nav-link" href="#opiniones" data-i18n="nav_reviews">Opiniones</a>
+        <a class="nav-link" href="#contacto" data-i18n="nav_contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MENÚ LATERAL (hamburguesa) ================= -->
+  <div id="drawer-overlay" class="drawer-overlay" hidden></div>
+  <aside id="drawer" class="drawer" aria-label="Menú" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="script" data-i18n="drawer_title">Menú</span>
+      <button id="drawer-close" class="tool-btn" type="button" data-i18n-label="close" aria-label="Cerrar">
+        <svg class="ic" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+
+    <p id="drawer-user" class="drawer-user"></p>
+    <button id="drawer-auth" class="btn btn-primary btn-block" type="button"></button>
+
+    <ul class="drawer-links">
+      <li><button type="button" data-go="inicio" data-i18n="nav_home">Inicio</button></li>
+      <li><button type="button" data-go="carta" data-i18n="nav_menu">Carta</button></li>
+      <li><button type="button" data-go="pedidos" data-i18n="nav_orders">Pedidos</button></li>
+      <li><button type="button" data-go="galeria" data-i18n="nav_gallery">Galería</button></li>
+      <li><button type="button" data-go="opiniones" data-i18n="nav_reviews">Opiniones</button></li>
+      <li><button type="button" data-go="contacto" data-i18n="nav_contact">Contacto</button></li>
+    </ul>
+
+    <button id="theme-toggle" class="drawer-pill" type="button" aria-pressed="false" data-i18n="drawer_theme">Modo oscuro</button>
+
+    <p class="drawer-follow" data-i18n="social_follow">Síguenos</p>
+    <div class="drawer-social">
+      <a href="https://www.instagram.com/chicharroneriairpavimallasa?utm_source=ig_web_button_share_sheet&hvrq=ZDNlZDc0MzIxNw==/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg><span>Instagram</span>
+      </a>
+      <a href="https://www.tiktok.com/@chicharroneria.ir?is_from_webapp=1&sender_device=pc/" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg class="ic" aria-hidden="true"><use href="#i-tiktok"/></svg><span>TikTok</span>
+      </a>
+      <a href="https://www.facebook.com/share/1CiaYNx5KD/?mibextid=wwXIfr/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg class="ic" aria-hidden="true"><use href="#i-fb"/></svg><span>Facebook</span>
+      </a>
+      <a href="https://wa.me/59164168010" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ================= INICIO / CUENTA (diálogo de iniciar sesión, registro o invitado) ================= -->
+  <dialog id="auth" class="auth" aria-labelledby="auth-title">
+    <div class="auth-inner">
+      <button id="auth-close" class="auth-close" type="button" data-i18n-label="close" aria-label="Cerrar">
+        <svg class="ic" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+      <h2 id="auth-title" class="script" data-i18n="welcome">Bienvenido</h2>
+      <p id="auth-sub" class="auth-sub"></p>
+
+      <div class="auth-tabs" role="tablist">
+        <button id="tab-login" type="button" role="tab" aria-selected="true" data-i18n="tab_login">Iniciar sesión</button>
+        <button id="tab-register" type="button" role="tab" aria-selected="false" data-i18n="tab_register">Crear cuenta</button>
+      </div>
+
+      <form id="login-form" class="auth-form" novalidate>
+        <div class="field">
+          <label for="l-email" data-i18n="label_email">Correo</label>
+          <input id="l-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="l-pass" data-i18n="label_password">Contraseña (mínimo 6)</label>
+          <input id="l-pass" name="password" type="password" autocomplete="current-password" required>
+        </div>
+        <p id="login-error" class="error" role="alert"></p>
+        <button class="btn btn-primary btn-block" type="submit" data-i18n="login_btn">Entrar</button>
+      </form>
+
+      <form id="register-form" class="auth-form" novalidate hidden>
+        <div class="field">
+          <label for="r-name" data-i18n="label_fullname">Nombre completo</label>
+          <input id="r-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="r-email" data-i18n="label_email">Correo</label>
+          <input id="r-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="r-phone" data-i18n="label_celular">Celular</label>
+          <input id="r-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+        </div>
+        <div class="field">
+          <label for="r-pass" data-i18n="label_password">Contraseña (mínimo 6)</label>
+          <input id="r-pass" name="password" type="password" autocomplete="new-password" required>
+        </div>
+        <p id="register-error" class="error" role="alert"></p>
+        <button class="btn btn-primary btn-block" type="submit" data-i18n="register_btn">Crear cuenta</button>
+      </form>
+
+      <button id="guest-btn" class="btn btn-outline btn-block auth-guest" type="button" data-i18n="guest">Entrar como invitado</button>
+      <p class="auth-note" data-i18n="auth_note">Tu cuenta es simulada en este dispositivo.</p>
+    </div>
+  </dialog>
+
+  <main id="main" class="app-main">
+
+    <!-- ===== PANTALLA: INICIO ===== -->
+    <div id="inicio" class="screen is-active" data-screen="inicio">
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+          <h1 data-i18n="hero_title">Chicharronería Irpavi</h1>
+          <p class="hero-sub" data-i18n="hero_sub">Todo el sabor de Bolivia en cada plato</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#carta" data-i18n="hero_cta">Ver carta</a>
+            <a class="btn btn-outline" href="#contacto" data-i18n="hero_cta2">Reservar mesa</a>
+          </div>
+        </div>
+        <div class="aguayo-band" aria-hidden="true"></div>
+      </section>
+
+      <section id="nosotros" class="section">
+        <div class="container split">
+          <div class="split-text">
+            <h2 class="title" data-i18n="about_title">Nosotros</h2>
+            <p class="lead" data-i18n="about_text">Cocinamos platos tradicionales de La Paz, los Valles y el Oriente con recetas heredadas y mucho cariño.</p>
+            <details open>
+              <summary data-i18n="a2_q">Horarios</summary>
+              <p data-i18n="a2_a">Sábado y domingo, 12:30 a 17:00</p>
+            </details>
+            <details>
+              <summary data-i18n="a3_q">¿Hacen pedidos para llevar?</summary>
+              <p data-i18n="a3_a">Sí. Escríbenos por WhatsApp o llámanos.</p>
+            </details>
+          </div>
+          <div class="media-box" role="img" aria-label="Ambiente del local"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== PANTALLA: CARTA ===== -->
+    <section id="carta" class="screen section section-cream" data-screen="carta">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="title" data-i18n="menu_title">Carta</h2>
+          <p class="script" data-i18n="menu_sub">Sabores de nuestra Bolivia</p>
+        </header>
+        <div id="carta-view" class="carta-view" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ===== PANTALLA: PEDIDOS ===== -->
+    <section id="pedidos" class="screen section section-cream" data-screen="pedidos">
+      <div class="container narrow">
+        <div id="pedidos-view" class="pedidos-view" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ===== PANTALLA: GALERÍA ===== -->
+    <section id="galeria" class="screen section" data-screen="galeria">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="title" data-i18n="gallery_title">Galería</h2>
+        </header>
+
+        <div class="carousel" role="region" aria-roledescription="carrusel" aria-label="Galería de fotos">
+          <div id="carousel-track" class="carousel-track"></div>
+          <button class="carousel-ctrl prev" type="button" data-i18n-label="prev" aria-label="Anterior">
+            <svg class="ic" aria-hidden="true"><use href="#i-left"/></svg>
+          </button>
+          <button class="carousel-ctrl next" type="button" data-i18n-label="next" aria-label="Siguiente">
+            <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg>
+          </button>
+          <button id="carousel-pause" class="carousel-pause" type="button" aria-pressed="false">
+            <svg class="ic icon-a" aria-hidden="true"><use href="#i-pause"/></svg>
+            <svg class="ic icon-b" aria-hidden="true"><use href="#i-play"/></svg>
+          </button>
+        </div>
+
+        <div id="carousel-dots" class="carousel-dots"></div>
+        <div id="thumbs" class="thumbs"></div>
+      </div>
+    </section>
+
+    <!-- ===== PANTALLA: OPINIONES ===== -->
+    <section id="opiniones" class="screen section section-dark" data-screen="opiniones">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="title" data-i18n="reviews_title">Opiniones</h2>
+          <p class="script" data-i18n="reviews_sub">Lo que dicen nuestros clientes</p>
+        </header>
+        <div id="reviews" class="reviews"></div>
+      </div>
+    </section>
+
+    <!-- ===== PANTALLA: CONTACTO / RESERVA DE MESA ===== -->
+    <section id="contacto" class="screen section" data-screen="contacto">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="title" data-i18n="contact_title">Reserva de mesa</h2>
+          <p class="script" data-i18n="contact_sub">Reserva tu mesa o escríbenos</p>
+        </header>
+
+        <div class="split contact-grid">
+          <div class="contact-info">
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <label for="name" data-i18n="label_name">Nombre</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+                <small id="name-error" class="error" aria-live="polite"></small>
+              </div>
+              <div class="field">
+                <label for="email" data-i18n="label_email">Correo</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+                <small id="email-error" class="error" aria-live="polite"></small>
+              </div>
+              <div class="field">
+                <label for="phone" data-i18n="label_phone">Celular</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+                <small id="phone-error" class="error" aria-live="polite"></small>
+              </div>
+              <div class="field">
+                <label for="message" data-i18n="label_msg">Fecha, hora y número de personas</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+                <small id="message-error" class="error" aria-live="polite"></small>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit" data-i18n="book_btn">Reservar mesa</button>
+              <p id="form-status" class="form-status" role="status"></p>
+            </form>
+
+            <ul class="info-list">
+              <li>
+                <span class="info-label" data-i18n="info_address">Dirección</span>
+                <span data-i18n="address">Irpavi, La Paz, Bolivia (completar dirección)</span>
+              </li>
+              <li>
+                <span class="info-label" data-i18n="info_hours">Horario</span>
+                <span data-i18n="a2_a_short">Sábado y domingo, 12:30 a 17:00</span>
+              </li>
+              <li>
+                <span class="info-label" data-i18n="info_phone">Teléfono</span>
+                <a href="tel:+59164168010">+591 64168010</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="map-box">
+            <iframe
+              title="Mapa de ubicación: Chicharrones de Irpavi"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.12006636197!2d-68.08902622445162!3d-16.520035041241947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f211b27e5b607%3A0x5080b6aff96cdea4!2sChicharrones%20de%20Irpavi!5e0!3m2!1ses-419!2sbo!4v1795577047650!5m2!1ses-419!2sbo"
+              width="600" height="450" style="border:0;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= BARRA INFERIOR (celular tipo app) ================= -->
+  <nav class="bottom-nav" aria-label="Secciones">
+    <button class="bn-btn" type="button" data-go="inicio" aria-current="page">
+      <svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>
+      <span data-i18n="nav_home">Inicio</span>
+    </button>
+    <button class="bn-btn" type="button" data-go="carta">
+      <svg class="ic" aria-hidden="true"><use href="#i-list"/></svg>
+      <span data-i18n="nav_menu">Carta</span>
+    </button>
+    <button class="bn-btn" type="button" data-go="pedidos">
+      <svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg>
+      <span data-i18n="nav_orders">Pedidos</span>
+      <span id="cart-count" class="cart-count" hidden>0</span>
+    </button>
+    <button class="bn-btn" type="button" data-go="galeria">
+      <svg class="ic" aria-hidden="true"><use href="#i-image"/></svg>
+      <span data-i18n="nav_gallery">Galería</span>
+    </button>
+  </nav>
+
+  <!-- ================= PIE (solo escritorio) ================= -->
+  <footer class="site-footer">
+    <div class="aguayo-band" aria-hidden="true"></div>
+    <div class="container footer-inner">
+      <img class="footer-logo" src="assets/logito.png" alt="Logo Chicharronería Irpavi" width="90" height="90">
+      <div class="footer-social">
+        <a href="https://www.instagram.com/chicharroneriairpavimallasa?utm_source=ig_web_button_share_sheet&hvrq=ZDNlZDc0MzIxNw==//" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@chicharroneria.ir?is_from_webapp=1&sender_device=pc/" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg class="ic" aria-hidden="true"><use href="#i-tiktok"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1CiaYNx5KD/?mibextid=wwXIfr//" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg class="ic" aria-hidden="true"><use href="#i-fb"/></svg>
+        </a>
+        <a href="https://wa.me/59164168010" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>
+        </a>
+      </div>
+      <p class="copy">© 2026 Chicharronería Irpavi · <span data-i18n="footer_tag">Hecho con cariño desde La Paz</span></p>
+    </div>
+  </footer>
+
+  <!-- Música de fondo: empieza al tocar "Toca para entrar". Coloca el archivo en assets/musica.mp3 -->
+  <audio id="bg-music" src="assets/musica.mp3" loop preload="auto"></audio>
+
+  <!-- LIGHTBOX: imagen ampliada -->
+  <dialog id="lightbox" class="lightbox" aria-label="Imagen ampliada">
+    <div class="lightbox-inner">
+      <button id="lightbox-close" class="lightbox-close" type="button" data-i18n-label="close" aria-label="Cerrar">
+        <svg class="ic" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-placeholder" class="placeholder lightbox-ph" hidden></div>
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </dialog>
+</body>
+</html>

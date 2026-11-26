@@ -1,0 +1,233 @@
+{
+  "gallery": [
+    { "src": "assets/galeria/chicharron.jpeg", "alt": { "es": "Chicharrón paceño", "en": "Paceño-style chicharrón" }, "desc": { "es": "Cerdo crocante con mote, llajua y ensalada.", "en": "Crispy pork with mote corn, llajua and salad." } },
+    { "src": "assets/galeria/fricase.jpeg", "alt": { "es": "Fricasé", "en": "Fricasé" }, "desc": { "es": "Plato paceño de cerdo en salsa de ají panca, con chuño y mote.", "en": "Paceño dish of pork in ají panca sauce, with chuño and mote corn." } },
+    { "src": "assets/galeria/chairo.jpeg", "alt": { "es": "Chairo", "en": "Chairo" }, "desc": { "es": "Sopa paceña de chuño, papa, carne y maíz, ideal para el frío.", "en": "Paceño soup of chuño, potato, meat and corn, perfect for the cold." } },
+    { "src": "assets/galeria/charke.jpeg", "alt": { "es": "Charque de llama", "en": "Llama charque" }, "desc": { "es": "Carne de llama seca con papa, chuño y ají.", "en": "Dried llama meat with potato, chuño and chili." } },
+    { "src": "assets/galeria/silpancho.jpeg", "alt": { "es": "Silpancho", "en": "Silpancho" }, "desc": { "es": "Carne fina empanizada sobre arroz, con huevo frito y papa.", "en": "Thin breaded beef over rice, with fried egg and potato." } },
+    { "src": "assets/galeria/sajta.jpeg", "alt": { "es": "Pique macho", "en": "Pique macho" }, "desc": { "es": "Carne, salchicha, papa y huevo con ají, para compartir.", "en": "Beef, sausage, potato and egg with chili, to share." } },
+    { "src": "assets/galeria/sajtita.jpeg", "alt": { "es": "Sajta de pollo", "en": "Chicken sajta" }, "desc": { "es": "Pollo en salsa de ají, con papa y arroz.", "en": "Chicken in chili sauce, with potato and rice." } },
+    { "src": "assets/galeria/caldo.jpeg", "alt": { "es": "Caldo de gallina", "en": "Hen broth" }, "desc": { "es": "Caldo casero de gallina con papa y arroz.", "en": "Homemade hen broth with potato and rice." } },
+    { "src": "assets/galeria/majadito.jpeg", "alt": { "es": "Majadito", "en": "Majadito" }, "desc": { "es": "Arroz con charque desmenuzado, huevo frito y plátano maduro.", "en": "Rice with shredded jerky, fried egg and ripe plantain." } },
+    { "src": "assets/galeria/masaco.jpeg", "alt": { "es": "Masaco de plátano", "en": "Plantain masaco" }, "desc": { "es": "Plátano machacado con carne y ají.", "en": "Mashed plantain with meat and chili." } },
+    { "src": "assets/galeria/surubi.jpeg", "alt": { "es": "Surubí a la parrilla", "en": "Grilled surubí" }, "desc": { "es": "Pescado de río a la parrilla, con ensalada y arroz.", "en": "River fish grilled, with salad and rice." } },
+    { "src": "assets/galeria/sopa.jpeg", "alt": { "es": "Sopa de maní", "en": "Peanut soup" }, "desc": { "es": "Sopa cremosa de maní con carne y verduras.", "en": "Creamy peanut soup with meat and vegetables." } }
+  ],
+  "regions": [
+    {
+      "id": "andes",
+      "name": { "es": "Andes", "en": "Andes" },
+      "sub": { "es": "Altiplano y La Paz", "en": "Highlands and La Paz" },
+      "categories": [
+        {
+          "id": "andes-platos",
+          "pattern": "red",
+          "title": { "es": "Platos", "en": "Dishes" },
+          "items": [
+            {
+              "id": "fricase",
+              "name": { "es": "Fricasé", "en": "Fricasé" },
+              "desc": { "es": "Cerdo en salsa de ají panca con chuño y mote.", "en": "Pork in ají panca sauce with chuño and mote." },
+              "price": 40,
+              "image": "assets/carta/fricacho.jpeg",
+              "ingredients": ["1 kg de cerdo en trozos", "4 ajíes panca sin semillas, remojados", "1 cebolla picada", "3 dientes de ajo", "1 cucharadita de comino", "2 cucharadas de manteca o aceite", "Chuño remojado y mote cocido para acompañar", "Sal al gusto"],
+              "steps": ["Sofríe la cebolla y el ajo en la manteca hasta que estén dorados.", "Licúa los ajíes panca con el comino y un poco de agua, y cuela la salsa.", "Dora el cerdo, agrega la salsa y cocina a fuego lento hasta que la carne esté tierna y la salsa espese.", "Sazona y sirve con chuño, mote y ensalada."]
+            },
+            {
+              "id": "chicharron-paceno",
+              "name": { "es": "Chicharrón paceño", "en": "Paceño chicharrón" },
+              "desc": { "es": "Chicharrón de cerdo crocante con mote, llajua y ensalada.", "en": "Crispy pork chicharrón with mote, llajua and salad." },
+              "price": 35,
+              "image": "assets/carta/chicharron-paceno.jpg",
+              "ingredients": ["1 kg de cerdo con cuero, en trozos", "1 cebolla entera", "4 dientes de ajo", "1 hoja de laurel", "1 cucharadita de comino", "Sal y aceite para freír"],
+              "steps": ["Cocina el cerdo con cebolla, ajo, laurel, comino y sal hasta que esté tierno.", "Escurre bien y deja secar la carne y el cuero.", "Fríe en aceite bien caliente hasta que quede dorado y crocante.", "Sirve con mote, papa, llajua y ensalada."]
+            },
+            {
+              "id": "charque-llama",
+              "name": { "es": "Charque de llama", "en": "Llama charque" },
+              "desc": { "es": "Charque de llama desmenuzado, salteado con papa y ají.", "en": "Shredded llama charque sautéed with potato and chili." },
+              "price": 45,
+              "image": "assets/carta/charque-de-llama.jpg",
+              "ingredients": ["300 g de charque de llama", "3 papas medianas", "1 cebolla", "2 tomates", "1 ají colorado", "Aceite, sal y comino"],
+              "steps": ["Remoja el charque unas horas y cocínalo hasta que esté tierno.", "Desmenúzalo y fríelo con un poco de aceite.", "Agrega cebolla, tomate y ají picados, y cocina unos minutos.", "Incorpora las papas cocidas en cubos, sazona y sirve caliente."]
+            }
+          ]
+        },
+        {
+          "id": "andes-caldos",
+          "pattern": "mustard",
+          "title": { "es": "Caldos y sopas", "en": "Soups" },
+          "items": [
+            {
+              "id": "chairo",
+              "name": { "es": "Chairo", "en": "Chairo" },
+              "desc": { "es": "Sopa tradicional paceña con chuño, papa, carne y maíz.", "en": "Traditional La Paz soup with chuño, potato, meat and corn." },
+              "price": 30,
+              "image": "assets/carta/chairo.jpg",
+              "ingredients": ["500 g de carne de res o cordero", "1 cucharada de chuño remojado", "2 papas", "1 zanahoria", "1 choclo en rodajas", "Cebolla, ajo, perejil y sal"],
+              "steps": ["Cocina la carne con cebolla, ajo y sal en agua durante una hora.", "Agrega el chuño remojado, las papas y el choclo.", "Incorpora la zanahoria y cocina hasta que todo esté tierno.", "Sirve con perejil picado y ají al lado."]
+            },
+            {
+              "id": "sopa-quinua",
+              "name": { "es": "Sopa de quinua", "en": "Quinoa soup" },
+              "desc": { "es": "Sopa de quinua con verduras.", "en": "Quinoa soup with vegetables." },
+              "price": 25,
+              "image": "assets/carta/sopa-de-quinua.jpg",
+              "ingredients": ["1 taza de quinua lavada", "1 zanahoria", "1 papa", "1 cebolla", "1 cucharada de aceite", "Sal, comino y perejil"],
+              "steps": ["Sofríe la cebolla en aceite y agrega la zanahoria y la papa picadas.", "Añade 1 litro de agua o caldo y deja hervir.", "Agrega la quinua y cocina unos 15 minutos hasta que esté suave.", "Sazona con comino, sal y perejil."]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "valles",
+      "name": { "es": "Valles", "en": "Valleys" },
+      "sub": { "es": "Cochabamba y valles", "en": "Cochabamba and the valleys" },
+      "categories": [
+        {
+          "id": "valles-platos",
+          "pattern": "teal",
+          "title": { "es": "Platos", "en": "Dishes" },
+          "items": [
+            {
+              "id": "silpancho",
+              "name": { "es": "Silpancho", "en": "Silpancho" },
+              "desc": { "es": "Carne fina empanizada con arroz, huevo frito, papa y ensalada.", "en": "Thin breaded beef with rice, fried egg, potato and salad." },
+              "price": 45,
+              "image": "assets/carta/silpancho.jpg",
+              "ingredients": ["300 g de carne de res muy delgada", "Pan rallado y 1 huevo para empanizar", "Arroz cocido", "2 huevos fritos", "1 papa frita", "Tomate y cebolla para ensalada", "Sal y ajo"],
+              "steps": ["Sazona la carne con sal y ajo, y empanízala con huevo y pan rallado.", "Fríe la carne hasta que esté dorada y crocante.", "Sirve sobre arroz y coloca encima el huevo frito y la papa frita.", "Acompaña con ensalada de tomate y cebolla."]
+            },
+            {
+              "id": "pique-macho",
+              "name": { "es": "Pique macho", "en": "Pique macho" },
+              "desc": { "es": "Carne, salchicha, papa, huevo y ají en una mezcla picante para compartir.", "en": "Beef, sausage, potato, egg and chili in a spicy mix to share." },
+              "price": 50,
+              "image": "assets/carta/pique-macho.jpg",
+              "ingredients": ["300 g de carne de res en tiras", "2 salchichas", "3 papas fritas", "2 huevos duros", "2 ajíes verdes y 1 rojo", "Cebolla, tomate y salsa picante"],
+              "steps": ["Fríe la carne y la salchicha en tiras hasta que doren.", "Agrega cebolla, ajíes y tomate picados, y cocina unos minutos.", "Incorpora las papas fritas y mezcla bien.", "Sirve con huevo duro en rodajas y salsa picante al gusto."]
+            },
+            {
+              "id": "sajta-pollo",
+              "name": { "es": "Sajta de pollo", "en": "Chicken sajta" },
+              "desc": { "es": "Pollo en salsa de ají con papa y arroz.", "en": "Chicken in chili sauce with potato and rice." },
+              "price": 40,
+              "image": "assets/carta/sajta-de-pollo.jpg",
+              "ingredients": ["1 pollo en presas", "4 ajíes panca o colorado", "1 cebolla", "3 dientes de ajo", "1 cucharadita de comino", "Papas y arroz para acompañar", "Aceite y sal"],
+              "steps": ["Dora el pollo en aceite y reserva.", "Licúa los ajíes con cebolla, ajo y comino, y cuela la salsa.", "Cocina la salsa en la olla, agrega el pollo y deja hervir a fuego lento hasta que esté tierno.", "Sirve con papas cocidas y arroz."]
+            },
+            {
+              "id": "anticuchos",
+              "name": { "es": "Anticuchos", "en": "Anticuchos" },
+              "desc": { "es": "Corazón de res marinado en ají, asado en brochetas.", "en": "Beef heart marinated in chili and grilled on skewers." },
+              "price": 35,
+              "image": "assets/carta/anticuchos.jpg",
+              "ingredients": ["500 g de corazón de res en cubos", "3 ajíes panca", "1 cucharada de vinagre", "2 dientes de ajo", "1 cucharadita de comino", "Papas cocidas y salsa de ají para acompañar", "Sal"],
+              "steps": ["Licúa los ajíes con ajo, comino, vinagre y sal para hacer la marinada.", "Marina la carne al menos 4 horas.", "Ensarta en brochetas y asa a fuego fuerte, girándolas hasta dorar.", "Sirve con papa cocida y salsa de ají."]
+            }
+          ]
+        },
+        {
+          "id": "valles-caldos",
+          "pattern": "plum",
+          "title": { "es": "Caldos y sopas", "en": "Soups" },
+          "items": [
+            {
+              "id": "caldo-gallina",
+              "name": { "es": "Caldo de gallina", "en": "Hen broth" },
+              "desc": { "es": "Caldo casero de gallina con papa y verduras.", "en": "Homemade hen broth with potato and vegetables." },
+              "price": 30,
+              "image": "assets/carta/caldo-de-gallina.jpg",
+              "ingredients": ["1 gallina o pollo entero", "2 papas", "1 zanahoria", "1 cebolla", "2 dientes de ajo", "Cilantro, perejil y sal"],
+              "steps": ["Cocina la gallina con cebolla, ajo y sal en agua durante una hora.", "Agrega las papas y la zanahoria en trozos.", "Cocina hasta que las verduras estén tiernas.", "Sirve con cilantro y perejil picados."]
+            },
+            {
+              "id": "sopa-mondongo",
+              "name": { "es": "Sopa de mondongo", "en": "Tripe soup" },
+              "desc": { "es": "Sopa de mondongo con maíz y papa.", "en": "Tripe soup with corn and potato." },
+              "price": 30,
+              "image": "assets/carta/sopa-de-mondongo.jpg",
+              "ingredients": ["500 g de mondongo limpio en trozos", "1 choclo", "2 papas", "1 cebolla", "2 dientes de ajo", "Hierbas y sal"],
+              "steps": ["Cocina el mondongo con cebolla, ajo y sal hasta que esté tierno.", "Agrega el choclo en rodajas y las papas en cubos.", "Cocina hasta que todo esté suave.", "Sirve bien caliente con hierbas frescas."]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oriente",
+      "name": { "es": "Oriente", "en": "Lowlands" },
+      "sub": { "es": "Beni, Santa Cruz y llanos", "en": "Beni, Santa Cruz and the lowlands" },
+      "categories": [
+        {
+          "id": "oriente-platos",
+          "pattern": "orange",
+          "title": { "es": "Platos", "en": "Dishes" },
+          "items": [
+            {
+              "id": "majadito",
+              "name": { "es": "Majadito", "en": "Majadito" },
+              "desc": { "es": "Arroz con charque desmenuzado, huevo frito y plátano maduro.", "en": "Rice with shredded jerky, fried egg and ripe plantain." },
+              "price": 35,
+              "image": "assets/carta/majadito.jpg",
+              "ingredients": ["2 tazas de arroz", "200 g de charque desmenuzado", "1 cebolla", "2 dientes de ajo", "Huevos fritos", "Plátano maduro frito", "Sal y aceite"],
+              "steps": ["Fríe el charque con cebolla y ajo hasta que esté dorado.", "Agrega el arroz y tuéstalo unos minutos.", "Añade agua caliente y cocina a fuego bajo hasta que el arroz esté listo.", "Sirve con huevo frito y plátano maduro."]
+            },
+            {
+              "id": "masaco-platano",
+              "name": { "es": "Masaco de plátano", "en": "Plantain masaco" },
+              "desc": { "es": "Plátano machacado con carne y ají.", "en": "Mashed plantain with meat and chili." },
+              "price": 35,
+              "image": "assets/carta/masaco-de-platano.jpg",
+              "ingredients": ["4 plátanos verdes", "300 g de carne de res desmenuzada", "1 cebolla", "1 tomate", "Ají y sal", "Aceite"],
+              "steps": ["Cocina los plátanos con cáscara hasta que estén tiernos y pélalos.", "Fríe la carne con cebolla, tomate y ají.", "Machaca los plátanos y mézclalos con la carne.", "Sazona con sal y sirve caliente."]
+            },
+            {
+              "id": "surubi-parrilla",
+              "name": { "es": "Surubí a la parrilla", "en": "Grilled surubí" },
+              "desc": { "es": "Pescado de río asado con limón, sal y ensalada.", "en": "River fish grilled with lime, salt and salad." },
+              "price": 55,
+              "image": "assets/carta/surubi.jpg",
+              "ingredients": ["1 filete de surubí (500 g)", "1 limón", "Sal y comino", "Aceite", "Ensalada fresca", "Yuca o arroz para acompañar"],
+              "steps": ["Limpia el pescado y marínalo con limón, sal y comino.", "Cocina a la parrilla o en sartén con poco aceite, dándole vuelta una vez.", "Cuando esté dorado y se desmenuce fácilmente, retíralo del fuego.", "Sirve con ensalada y yuca o arroz."]
+            }
+          ]
+        },
+        {
+          "id": "oriente-caldos",
+          "pattern": "green",
+          "title": { "es": "Caldos y sopas", "en": "Soups" },
+          "items": [
+            {
+              "id": "sopa-mani",
+              "name": { "es": "Sopa de maní", "en": "Peanut soup" },
+              "desc": { "es": "Sopa cremosa de maní con carne y verduras.", "en": "Creamy peanut soup with meat and vegetables." },
+              "price": 30,
+              "image": "assets/carta/sopa-de-mani.jpg",
+              "ingredients": ["150 g de maní molido sin cáscara", "300 g de carne de res", "1 cebolla", "1 zanahoria", "1 papa", "Ají, sal y comino"],
+              "steps": ["Cocina la carne con cebolla y sal en agua hasta que esté tierna.", "Disuelve el maní molido en un poco de agua y agrégalo a la olla.", "Incorpora la papa y la zanahoria en cubos, y cocina hasta que estén tiernas.", "Sazona con ají y comino, y sirve caliente."]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    { "name": "", "stars": 5, "text": { "es": "Comida típica muy rica, el chicharrón está crocante y bien sazonado. Volveremos.", "en": "Very tasty traditional food, the chicharrón is crispy and well seasoned. We will be back." } },
+    { "name": "", "stars": 5, "text": { "es": "El lugar es muy cómodo y la atención es excelente. El silpancho es enorme.", "en": "The place is very comfortable and the service is excellent. The silpancho is huge." } },
+    { "name": "", "stars": 5, "text": { "es": "Ideal para ir en grupo, hay buen ambiente y música en vivo.", "en": "Ideal for going with a group, great atmosphere and live music." } },
+    { "name": "", "stars": 5, "text": { "es": "Probé el fricasé por primera vez y me encantó. Sabor paceño auténtico.", "en": "I tried fricasé for the first time and loved it. Authentic paceño flavor." } },
+    { "name": "", "stars": 5, "text": { "es": "La sajta de pollo tiene el punto de ají perfecto. Muy recomendable.", "en": "The chicken sajta has the perfect chili kick. Highly recommended." } },
+    { "name": "", "stars": 4, "text": { "es": "Buena relación entre precio y porción. El chairo es muy sabroso en días fríos.", "en": "Good value for the portion. The chairo is very tasty on cold days." } },
+    { "name": "", "stars": 5, "text": { "es": "Muy limpio y acogedor, el personal es amable y atento.", "en": "Very clean and cozy, the staff is friendly and attentive." } },
+    { "name": "", "stars": 5, "text": { "es": "El majadito es de lo mejor que he probado en La Paz.", "en": "The majadito is one of the best I have tried in La Paz." } },
+    { "name": "", "stars": 5, "text": { "es": "Pedimos pique macho para compartir y alcanzó para todos. Muy rico.", "en": "We ordered pique macho to share and it was enough for everyone. Delicious." } },
+    { "name": "", "stars": 5, "text": { "es": "Un lugar cómodo para almorzar en familia, con platos bien preparados.", "en": "A comfortable place for a family lunch, with well-prepared dishes." } },
+    { "name": "", "stars": 5, "text": { "es": "El caldo de gallina me recordó a la cocina de mi abuela. Gracias.", "en": "The hen broth reminded me of my grandmother's cooking. Thank you." } },
+    { "name": "", "stars": 5, "text": { "es": "Excelente atención y platos típicos bien servidos. Volveré pronto.", "en": "Excellent service and traditional dishes well served. I will come back soon." } },
+    { "name": "", "stars": 4, "text": { "es": "La sopa de maní es cremosa y deliciosa. Muy buena opción.", "en": "The peanut soup is creamy and delicious. A very good option." } },
+    { "name": "", "stars": 5, "text": { "es": "El masaco de plátano estuvo espectacular, muy bien sazonado.", "en": "The plantain masaco was spectacular, very well seasoned." } },
+    { "name": "", "stars": 5, "text": { "es": "Lugar acogedor, con buena música y atención rápida. Muy recomendable.", "en": "Cozy place, with good music and quick service. Very recommended." } }
+  ]
+}

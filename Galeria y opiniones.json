@@ -1,0 +1,33 @@
+{
+  "gallery": [
+    { "src": "", "alt": { "es": "Chicharrón paceño", "en": "Paceño-style chicharrón" }, "desc": { "es": "Cerdo crocante con mote, llajua y ensalada.", "en": "Crispy pork with mote corn, llajua and salad." } },
+    { "src": "", "alt": { "es": "Fricasé", "en": "Fricasé" }, "desc": { "es": "Plato paceño de cerdo en salsa de ají panca, con chuño y mote.", "en": "Paceño dish of pork in ají panca sauce, with chuño and mote corn." } },
+    { "src": "", "alt": { "es": "Chairo", "en": "Chairo" }, "desc": { "es": "Sopa paceña de chuño, papa, carne y maíz, ideal para el frío.", "en": "Paceño soup of chuño, potato, meat and corn, perfect for the cold." } },
+    { "src": "", "alt": { "es": "Charque de llama", "en": "Llama charque" }, "desc": { "es": "Carne de llama seca con papa, chuño y ají.", "en": "Dried llama meat with potato, chuño and chili." } },
+    { "src": "", "alt": { "es": "Silpancho", "en": "Silpancho" }, "desc": { "es": "Carne fina empanizada sobre arroz, con huevo frito y papa.", "en": "Thin breaded beef over rice, with fried egg and potato." } },
+    { "src": "", "alt": { "es": "Pique macho", "en": "Pique macho" }, "desc": { "es": "Carne, salchicha, papa y huevo con ají, para compartir.", "en": "Beef, sausage, potato and egg with chili, to share." } },
+    { "src": "", "alt": { "es": "Sajta de pollo", "en": "Chicken sajta" }, "desc": { "es": "Pollo en salsa de ají, con papa y arroz.", "en": "Chicken in chili sauce, with potato and rice." } },
+    { "src": "", "alt": { "es": "Caldo de gallina", "en": "Hen broth" }, "desc": { "es": "Caldo casero de gallina con papa y arroz.", "en": "Homemade hen broth with potato and rice." } },
+    { "src": "", "alt": { "es": "Majadito", "en": "Majadito" }, "desc": { "es": "Arroz con charque desmenuzado, huevo frito y plátano maduro.", "en": "Rice with shredded jerky, fried egg and ripe plantain." } },
+    { "src": "", "alt": { "es": "Masaco de plátano", "en": "Plantain masaco" }, "desc": { "es": "Plátano machacado con carne y ají.", "en": "Mashed plantain with meat and chili." } },
+    { "src": "", "alt": { "es": "Surubí a la parrilla", "en": "Grilled surubí" }, "desc": { "es": "Pescado de río a la parrilla, con ensalada y arroz.", "en": "River fish grilled, with salad and rice." } },
+    { "src": "", "alt": { "es": "Sopa de maní", "en": "Peanut soup" }, "desc": { "es": "Sopa cremosa de maní con carne y verduras.", "en": "Creamy peanut soup with meat and vegetables." } }
+  ],
+  "reviews": [
+    { "name": "", "stars": 5, "text": { "es": "Comida típica muy rica, el chicharrón está crocante y bien sazonado. Volveremos.", "en": "Very tasty traditional food, the chicharrón is crispy and well seasoned. We will be back." } },
+    { "name": "", "stars": 5, "text": { "es": "El lugar es muy cómodo y la atención es excelente. El silpancho es enorme.", "en": "The place is very comfortable and the service is excellent. The silpancho is huge." } },
+    { "name": "", "stars": 5, "text": { "es": "Ideal para ir en grupo, hay buen ambiente y música en vivo.", "en": "Ideal for going with a group, great atmosphere and live music." } },
+    { "name": "", "stars": 5, "text": { "es": "Probé el fricasé por primera vez y me encantó. Sabor paceño auténtico.", "en": "I tried fricasé for the first time and loved it. Authentic paceño flavor." } },
+    { "name": "", "stars": 5, "text": { "es": "La sajta de pollo tiene el punto de ají perfecto. Muy recomendable.", "en": "The chicken sajta has the perfect chili kick. Highly recommended." } },
+    { "name": "", "stars": 4, "text": { "es": "Buena relación entre precio y porción. El chairo es muy sabroso en días fríos.", "en": "Good value for the portion. The chairo is very tasty on cold days." } },
+    { "name": "", "stars": 5, "text": { "es": "Muy limpio y acogedor, el personal es amable y atento.", "en": "Very clean and cozy, the staff is friendly and attentive." } },
+    { "name": "", "stars": 5, "text": { "es": "El majadito es de lo mejor que he probado en La Paz.", "en": "The majadito is one of the best I have tried in La Paz." } },
+    { "name": "", "stars": 5, "text": { "es": "Pedimos pique macho para compartir y alcanzó para todos. Muy rico.", "en": "We ordered pique macho to share and it was enough for everyone. Delicious." } },
+    { "name": "", "stars": 5, "text": { "es": "Un lugar cómodo para almorzar en familia, con platos bien preparados.", "en": "A comfortable place for a family lunch, with well-prepared dishes." } },
+    { "name": "", "stars": 5, "text": { "es": "El caldo de gallina me recordó a la cocina de mi abuela. Gracias.", "en": "The hen broth reminded me of my grandmother's cooking. Thank you." } },
+    { "name": "", "stars": 5, "text": { "es": "Excelente atención y platos típicos bien servidos. Volveré pronto.", "en": "Excellent service and traditional dishes well served. I will come back soon." } },
+    { "name": "", "stars": 4, "text": { "es": "La sopa de maní es cremosa y deliciosa. Muy buena opción.", "en": "The peanut soup is creamy and delicious. A very good option." } },
+    { "name": "", "stars": 5, "text": { "es": "El masaco de plátano estuvo espectacular, muy bien sazonado.", "en": "The plantain masaco was spectacular, very well seasoned." } },
+    { "name": "", "stars": 5, "text": { "es": "Lugar acogedor, con buena música y atención rápida. Muy recomendable.", "en": "Cozy place, with good music and quick service. Very recommended." } }
+  ]
+}
